@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>乐me商城</title>
+    <!-- Bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/swiper-3.2.7.min.css">
+    <link rel="stylesheet" type="text/css" href="src/css/leme.css">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="jquery/1.11.1/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="src/js/swiper-3.2.7.jquery.min.js"></script>
+</head>
+<body class="bg-gray">
+<div id="center" class="container-fluid">
+    <!-- 头部 -->
+    <div class="header">
+        <div class="page">
+            <div class="top">
+                <ul class="nav nav-header">
+                    <li class="active"><a href="javascript:;">博广乐me商城</a></li>
+                    <li><a href="" target="_blank">橙视圈</a></li>
+                    <li><a href="" target="_blank">美家秀</a></li>
+                    <li><a href="" target="_blank">问题反馈</a></li>
+                </ul>
+                <div class="tool">
+                    <a href="#">登录</a>|<a href="#">注册</a>
+                    <a href="#" class="cart"><i class="glyphicon glyphicon-shopping-cart"></i><span>购物车(0)</span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="page">
+            <div class="sub-nav">
+                <a href="#" class="logo">
+                    <img src="images/logo.png">
+                </a>
+                <ul class="nav nav-main">
+                    <li><a href="#">商城首页</a></li>
+                    <li><a href="#">移动电源</a></li>
+                    <li><a href="#" data-target="#yaokong">遥控器</a></li>
+                    <li><a href="#" data-target="#yinxiang">音响</a></li>
+                    <li><a href="#">车载</a></li>
+                </ul>
+                <div class="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="乐me移动电源">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button"><i class="glyphicon glyphicon-search"></i></button>
+                        </span>
+                    </div>
+                </div>
+                <div class="sub-panel">
+                    <ul id="yaokong" class="panel-list">
+                        <li>
+                            <a href="#" class="panel-link">
+                                <img src="images/goods_1.png" alt="">
+                                <div class="name">先锋SEC-CL31S</div>
+                                <div class="price">¥79.00</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="panel-link">
+                                <img src="images/goods_2.png" alt="">
+                                <div class="name">先锋SEC-CL31S</div>
+                                <div class="price">¥79.00</div>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul id="yinxiang" class="panel-list">
+                        <li>
+                            <a href="#" class="panel-link">
+                                <img src="images/goods_1.png" alt="">
+                                <div class="name">先锋SEC-CL31S</div>
+                                <div class="price">¥79.00</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="panel-link">
+                                <img src="images/goods_2.png" alt="">
+                                <div class="name">先锋SEC-CL31S</div>
+                                <div class="price">¥79.00</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="panel-link">
+                                <img src="images/goods_1.png" alt="">
+                                <div class="name">先锋SEC-CL31S</div>
+                                <div class="price">¥79.00</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="panel-link">
+                                <img src="images/goods_2.png" alt="">
+                                <div class="name">先锋SEC-CL31S</div>
+                                <div class="price">¥79.00</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="panel-link">
+                                <img src="images/goods_1.png" alt="">
+                                <div class="name">先锋SEC-CL31S</div>
+                                <div class="price">¥79.00</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main main-4">
+        <div class="page">
+            <div class="page-header">
+                <div class="head">
+                    <div class="name">LEME</div>
+                </div>
+                <div class="banner">
+                    <div class="center-swiper swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" style="background-image:url(images/banner.png)"></div>
+                            <div class="swiper-slide" style="background-image:url(images/banner_1.png)"></div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="page-content">
+                <div class="navbar-left">
+                    <div class="title"><i class="glyphicon glyphicon-star"></i><span>个人中心</span></div>
+                    <div class="list-title"><i class="glyphicon glyphicon-list"></i>订单中心<i class="glyphicon glyphicon-menu-up rotate"></i></div>
+                    <ul class="list-content show">
+                        <li class="active"><a class="list-item" role="tab" data-toggle="tab" href="#myorder">我的订单</a></li>
+                        <li><a class="list-item" role="tab" data-toggle="tab" href="#myaddress">我的地址</a></li>
+                        <li><a class="list-item" role="tab" data-toggle="tab" href="#mycoupon">我的优惠券</a></li>
+                    </ul>
+                    <div class="list-title"><i class="glyphicon glyphicon-user"></i>账号管理<i class="glyphicon glyphicon-menu-up rotate"></i></div>
+                    <ul class="list-content show">
+                        <li><a class="list-item" role="tab" data-toggle="tab" href="#userinfo">个人信息</a></li>
+                        <li><a class="list-item" role="tab" data-toggle="tab" href="#editpwd">修改密码</a></li>
+                    </ul>
+                </div>
+                <div class="center-page tab-content">
+                    <div id="myorder" role="tabpanel" class="page-right fade active in">
+                        <div class="right-head">
+                            <h4 class="right-title">我的订单</h4>
+                            <div class="search-bar">
+                                <select name="" class="search-select">
+                                    <option value="">最近一年订单</option>
+                                </select>
+                                <select name="" class="search-select">
+                                    <option value="">所有状态</option>
+                                </select>
+                                <div class="search-group clearfix">
+                                    <input type="text" class="search-input" placeholder="商品名称/订单号">
+                                    <button class="search-btn" type="button">查询</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right-content">
+                            <table class="table-order table table-striped table-bordered">
+                                <thead>
+                                <tr>
+                                    <th>订单号</th>
+                                    <th>下单时间</th>
+                                    <th>订单总额</th>
+                                    <th>订单状态</th>
+                                    <th class="operate">操作</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td class="no" colspan="5">123213561151345</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="images/goods_1.png" alt=""></td>
+                                    <td>2015年5月11号12:12</td>
+                                    <td>500元</td>
+                                    <td>已完成</td>
+                                    <td>
+                                        <a href="#">查看</a>|<a href="#">删除</a><br/>
+                                        <a href="#">评价晒单</a><br/>
+                                        <a href="#">申请返修/退换货</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="no" colspan="5">123213561151345</td>
+                                </tr>
+                                <tr>
+                                    <td><img src="images/goods_2.png" alt=""></td>
+                                    <td>2015年5月11号12:12</td>
+                                    <td>500元</td>
+                                    <td>已完成</td>
+                                    <td>
+                                        <a href="#">查看</a>|<a href="#">删除</a>
+                                        <a href="#">评价晒单</a>
+                                        <a href="#">申请返修/退换货</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><img src="images/goods_3.png" alt=""></td>
+                                    <td>2015年5月11号12:12</td>
+                                    <td>500元</td>
+                                    <td>已完成</td>
+                                    <td>
+                                        <a href="#">查看</a>|<a href="#">删除</a>
+                                        <a href="#">评价晒单</a>
+                                        <a href="#">申请返修/退换货</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><img src="images/goods_4.png" alt=""></td>
+                                    <td>2015年5月11号12:12</td>
+                                    <td>500元</td>
+                                    <td>已完成</td>
+                                    <td>
+                                        <a href="#">查看</a>|<a href="#">删除</a>
+                                        <a href="#">评价晒单</a>
+                                        <a href="#">申请返修/退换货</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><img src="images/fitting_1.png" alt=""></td>
+                                    <td>2015年5月11号12:12</td>
+                                    <td>500元</td>
+                                    <td>已完成</td>
+                                    <td>
+                                        <a href="#">查看</a>|<a href="#">删除</a>
+                                        <a href="#">评价晒单</a>
+                                        <a href="#">申请返修/退换货</a>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                            <nav class="my-pagination text-center">
+                                <ul class="pagination">
+                                    <li><a href="#" aria-label="First">首页</a></li>
+                                    <li><a href="#" aria-label="Previous">上一页</a></li>
+                                    <li class="active"><a href="#">1</a></li>
+                                    <li><a href="#">2</a></li>
+                                    <li><a href="#">3</a></li>
+                                    <li><a href="#" aria-label="Previous">下一页</a></li>
+                                    <li><a href="#" aria-label="Last">尾页</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div id="mycoupon" role="tabpanel" class="page-right fade">
+                        <ul class="right-head">
+                            <li class="right-title active"><a href="#unused" role="tab" data-toggle="tab">未使用 ( 1 )</a></li>
+                            <li class="right-title"><a href="#used" role="tab" data-toggle="tab">已使用 ( 3 )</a></li>
+                            <li class="right-title"><a href="#expired" role="tab" data-toggle="tab">已失效 ( 2 )</a></li>
+                        </ul>
+                        <div class="right-content">
+                            <div id="unused" role="tabpanel" class="page-coupon fade active in">
+                                <ul class="coupon-list clearfix">
+                                    <li class="coupon-item unused clearfix">
+                                        <div class="item-left">
+                                            <div class="left-text">¥<span class="price">10</span>元</div>
+                                            <div class="left-tips">立即领取</div>
+                                        </div>
+                                        <div class="item-right">
+                                            <div class="right-text">
+                                                <h4>优惠券说明</h4>
+                                                <p style="margin-top: 15px;">使用规则：</p>
+                                                <p>1.每笔订单仅限使用一张</p>
+                                                <p>2.商品满30才能使用</p>
+                                                <p style="margin-top: 20px;">有效期：</p>
+                                                <p>2016-04-11至2016-05-11</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="used" role="tabpanel" class="page-coupon fade">
+                                <ul class="coupon-list clearfix">
+                                    <li class="coupon-item used clearfix">
+                                        <div class="item-left">
+                                            <div class="left-text">¥<span class="price">10</span>元</div>
+                                            <div class="left-tips">已使用</div>
+                                        </div>
+                                        <div class="item-right">
+                                            <div class="right-text">
+                                                <h4>优惠券说明</h4>
+                                                <p style="margin-top: 15px;">使用规则：</p>
+                                                <p>1.每笔订单仅限使用一张</p>
+                                                <p>2.商品满30才能使用</p>
+                                                <p style="margin-top: 20px;">有效期：</p>
+                                                <p>2016-04-11至2016-05-11</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="coupon-item used clearfix">
+                                        <div class="item-left">
+                                            <div class="left-text">¥<span class="price">10</span>元</div>
+                                            <div class="left-tips">已使用</div>
+                                        </div>
+                                        <div class="item-right">
+                                            <div class="right-text">
+                                                <h4>优惠券说明</h4>
+                                                <p style="margin-top: 15px;">使用规则：</p>
+                                                <p>1.每笔订单仅限使用一张</p>
+                                                <p>2.商品满30才能使用</p>
+                                                <p style="margin-top: 20px;">有效期：</p>
+                                                <p>2016-04-11至2016-05-11</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="coupon-item used clearfix">
+                                        <div class="item-left">
+                                            <div class="left-text">¥<span class="price">10</span>元</div>
+                                            <div class="left-tips">已使用</div>
+                                        </div>
+                                        <div class="item-right">
+                                            <div class="right-text">
+                                                <h4>优惠券说明</h4>
+                                                <p style="margin-top: 15px;">使用规则：</p>
+                                                <p>1.每笔订单仅限使用一张</p>
+                                                <p>2.商品满30才能使用</p>
+                                                <p style="margin-top: 20px;">有效期：</p>
+                                                <p>2016-04-11至2016-05-11</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div id="expired" role="tabpanel" class="page-coupon fade">
+                                <ul class="coupon-list clearfix">
+                                    <li class="coupon-item expired clearfix">
+                                        <div class="item-left">
+                                            <div class="left-text">¥<span class="price">10</span>元</div>
+                                            <div class="left-tips">已经过期</div>
+                                        </div>
+                                        <div class="item-right">
+                                            <div class="right-text">
+                                                <h4>优惠券说明</h4>
+                                                <p style="margin-top: 15px;">使用规则：</p>
+                                                <p>1.每笔订单仅限使用一张</p>
+                                                <p>2.商品满30才能使用</p>
+                                                <p style="margin-top: 20px;">有效期：</p>
+                                                <p>2016-04-11至2016-05-11</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="coupon-item expired clearfix">
+                                        <div class="item-left">
+                                            <div class="left-text">¥<span class="price">10</span>元</div>
+                                            <div class="left-tips">已经过期</div>
+                                        </div>
+                                        <div class="item-right">
+                                            <div class="right-text">
+                                                <h4>优惠券说明</h4>
+                                                <p style="margin-top: 15px;">使用规则：</p>
+                                                <p>1.每笔订单仅限使用一张</p>
+                                                <p>2.商品满30才能使用</p>
+                                                <p style="margin-top: 20px;">有效期：</p>
+                                                <p>2016-04-11至2016-05-11</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="myaddress" role="tabpanel" class="page-right fade">
+                        <div class="right-head">
+                            <h4 class="right-title">收货地址</h4>
+                        </div>
+                        <div class="right-content">
+                            <div class="address-item">
+                                <div class="item-head">
+                                    <label>地址1</label>
+                                    <a href="#" class="del-address">删除</a>
+                                </div>
+                                <div class="item-content">
+                                    <p><label>收货人：</label><span>肖某某</span></p>
+                                    <p><label>收货地址：</label><span>广东省深圳市龙岗区平湖街道上木古村宝来工业区新河路77号</span></p>
+                                    <p><label>联系电话：</label><span>18520323559</span></p>
+                                </div>
+                            </div>
+                            <div class="address-item">
+                                <div class="item-head">
+                                    <label>地址2</label>
+                                    <a href="#" class="del-address">删除</a>
+                                </div>
+                                <div class="item-content">
+                                    <p><label>收货人：</label><span>肖某某</span></p>
+                                    <p><label>收货地址：</label><span>广东省深圳市龙岗区平湖街道上木古村宝来工业区新河路77号</span></p>
+                                    <p><label>联系电话：</label><span>18520323559</span></p>
+                                </div>
+                            </div>
+                            <div class="address-item">
+                                <div class="item-head">
+                                    <label>地址3</label>
+                                </div>
+                                <div class="item-content">
+                                    <form class="address-info my-form" action="">
+                                        <div class="form-row">
+                                            <label><span>*</span>收货人：</label><input class="form-control" type="text">
+                                        </div>
+                                        <div class="form-row">
+                                            <label><span>*</span>所在地区：</label>
+                                            <div>
+                                                <select class="form-control" name="">
+                                                    <option value="">广东省</option>
+                                                </select>
+                                                <select class="form-control" name="">
+                                                    <option value="">深圳市</option>
+                                                </select>
+                                                <select class="form-control" name="">
+                                                    <option value="">南山区</option>
+                                                </select>
+                                                <select class="form-control" name="">
+                                                    <option value="">学府路</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="form-row">
+                                            <label><span>*</span>详细地址：</label><input class="form-control width" type="text">
+                                        </div>
+                                        <div class="form-row">
+                                            <label><span>*</span>手机号码：</label>
+                                            <div>
+                                                <input class="form-control" type="text"><span>&nbsp;或&nbsp;&nbsp;&nbsp;</span>
+                                                <label class="inline">固定电话：</label><input class="form-control" type="text">
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="userinfo" role="tabpanel" class="page-right fade">
+                        <div class="right-head">
+                            <h4 class="right-title">个人信息</h4>
+                            <a class="edit-userinfo" href="#">编辑个人信息</a>
+                        </div>
+                        <div class="right-content">
+                            <form class="user-info my-form" action="" method="post">
+                                <div class="form-row">
+                                    <label>账号：</label><span>32875123</span>
+                                </div>
+                                <div class="form-row">
+                                    <label>积分：</label><span class="orange">0</span>
+                                </div>
+                                <div class="form-row">
+                                    <label>邮箱：</label><input class="form-control" type="email" >
+                                </div>
+                                <div class="form-row">
+                                    <label>姓名：</label><input class="form-control" type="text" >
+                                </div>
+                                <div class="form-row">
+                                    <label>详细地址：</label><input class="form-control" type="text" >
+                                </div>
+                                <div class="form-row">
+                                    <label>邮政编码：</label><input class="form-control" type="text" >
+                                </div>
+                                <div class="form-row">
+                                    <label>联系电话：</label><input class="form-control" type="text" >
+                                </div>
+                                <div class="form-row">
+                                    <label></label><input type="submit" class="btn btn-submit" value="提交" >
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div id="editpwd" role="tabpanel" class="page-right fade">
+                        <div class="right-head">
+                            <h4 class="right-title">修改密码</h4>
+                        </div>
+                        <div class="right-content">
+                            <form class="edit-pwd my-form" action="" method="post">
+                                <div class="form-row">
+                                    <label><span>*</span>当前密码</label><input class="form-control" type="password">
+                                    <a href="#" class="forget-psd">忘记密码？</a>
+                                </div>
+                                <div class="form-row">
+                                    <label><span>*</span>新密码</label><input class="form-control" type="password">
+                                    <p class="input-tips">密码由6-16个字符组成，区分大小写（不能是9位以下的纯数字，不能包含空格）</p>
+                                </div>
+                                <div class="form-row">
+                                    <label><span>*</span>确认密码</label><input class="form-control" type="password">
+                                </div>
+                                <div class="form-row">
+                                    <label></label><input type="submit" class="btn btn-submit" value="提交" >
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="src/js/leme.js"></script>
+<script type="text/javascript">
+
+</script>
+</body>
+</html>

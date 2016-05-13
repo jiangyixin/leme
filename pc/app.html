@@ -23,7 +23,7 @@
     <script src="src/js/swiper-3.2.7.jquery.min.js"></script>
 </head>
 <body>
-<div class="container-fluid">
+<div id="app" class="container-fluid">
     <!-- 头部 -->
     <div class="header">
         <div class="page">
@@ -118,6 +118,69 @@
                     </ul>
                 </div>
             </div>
+        </div>
+    </div>
+    <div class="main main-1">
+        <div class="page">
+            <div class="app-slide">
+                <!-- 左右切换按钮 -->
+                <div class="app-swiper-control">
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+                <div class="app-swiper swiper-container">
+                    <ul class="swiper-wrapper">
+                        <li class="swiper-slide active">
+                            <!-- 链接 图片 文字 -->
+                            <a data-toggle="tab" href="#app_1"><img src="images/app_1.png"><div class="info"></div></a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a data-toggle="tab" href="#app_2"><img src="images/app_1.png"><div class="info"></div></a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a data-toggle="tab" href="#app_3"><img src="images/app_1.png"><div class="info"></div></a>
+                        </li>
+                        <li class="swiper-slide">
+                            <a data-toggle="tab" href="#app_4"><img src="images/app_1.png"><div class="info"></div></a>
+                        </li>
+                    </ul>
+                    <!-- 如果需要分页器 -->
+                    <!-- <div class="swiper-pagination"></div> -->
+                </div>
+            </div>
+        </div>
+        <div class="app-content">
+            <ul>
+                <li role="tabpanel" class="tab-pane fade active in" id="app_1">
+                    <img src="images/app_content.png" alt="">
+                    <div class="content-info page">
+                        <h4>更新日志：</h4>
+                        <p>【本周推荐】</p>
+                        <p>新增 垃圾清理 腾讯扫描引擎，双引擎选择，垃圾清理更干净</p>
+                        <p>优化 安全中心 体检中的缓存扫描方法，可以清理出更多空间</p>
+                    </div>
+                </li>
+                <li role="tabpanel" class="tab-pane fade" id="app_2">
+                    <img src="images/banner.png" alt="">
+                    <div class="content-info page">
+                        <h4>更新日志：</h4>
+                        <p>【本周推荐】</p>
+                        <p>新增 垃圾清理 腾讯扫描引擎，双引擎选择，垃圾清理更干净</p>
+                    </div>
+                </li>
+                <li role="tabpanel" class="tab-pane fade" id="app_3">
+                    <img src="images/app_content.png" alt="">
+                    <div class="content-info page">
+                        <h4>更新日志：</h4>
+                        <p>优化 安全中心 体检中的缓存扫描方法，可以清理出更多空间</p>
+                    </div>
+                </li>
+                <li role="tabpanel" class="tab-pane fade" id="app_4">
+                    <img src="images/banner.png" alt="">
+                    <div class="content-info page">
+                    </div>
+                </li>
+            </ul>
         </div>
     </div>
     <div class="footer">

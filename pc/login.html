@@ -22,8 +22,8 @@
     <script src="bootstrap/js/bootstrap.js"></script>
     <script src="src/js/swiper-3.2.7.jquery.min.js"></script>
 </head>
-<body>
-<div class="container-fluid">
+<body class="bg-gray">
+<div id="login" class="container-fluid">
     <!-- 头部 -->
     <div class="header">
         <div class="page">
@@ -120,58 +120,35 @@
             </div>
         </div>
     </div>
-    <div class="footer">
-        <div class="footer-content page">
-            <ul class="shopping-info justify">
-                <li><span class="online"></span><h5>在线客服</h5></li>
-                <li><span class="return-goods"></span><h5>7天无理由退货</h5></li>
-                <li><span class="exchange-goods"></span><h5>15天免费换货</h5></li>
-                <li><span class="delivery-goods"></span><h5>满150元包邮</h5></li>
-                <li class="justify_fix"></li>
-            </ul>
-            <hr>
-            <div class="about-info justify">
-                <ul>
-                    <li><h3 class="title">帮助中心</h3></li>
-                    <li><a href="#" target="_blank">购买指南</a></li>
-                    <li><a href="#" target="_blank">支付方式</a></li>
-                    <li><a href="#" target="_blank">配送方式</a></li>
-                </ul>
-                <ul>
-                    <li><h3 class="title">服务支持</h3></li>
-                    <li><a href="#" target="_blank">售后政策</a></li>
-                    <li><a href="#" target="_blank">自助服务</a></li>
-                    <li><a href="#" target="_blank">相关下载</a></li>
-                </ul>
-                <ul>
-                    <li><h3 class="title">关于博广</h3></li>
-                    <li><a href="#" target="_blank">了解博广</a></li>
-                    <li><a href="#" target="_blank">加入博广</a></li>
-                    <li><span>&nbsp;</span></li>
-                </ul>
-                <ul class="contact-us">
-                    <li><h3 class="title">联系我们</h3></li>
-                    <li class="follow-us">
-                        <span class="weibo"></span>
-                        <span class="qq"></span>
-                        <span class="weixin"></span>
-                        <span class="weizhi"></span>
-                    </li>
-                    <li><span>400-619-0909</span></li>
-                    <li><span>周一至周日 9:00-18:00</span></li>
-                </ul>
-                <ul class="justify_fix"></ul>
-            </div>
-            <div class="link-info">
-                <div class="info-img">
-                    <img src="images/logo.png" alt="">
+    <div class="main main-1">
+        <div class="page">
+            <div class="page-block">
+                <a href="#" class="link-register">注册账号</a>
+                <div class="block-head">
+                    <img  src="images/logo_l.png" alt="">
+                    <h4>乐me账号登录</h4>
                 </div>
-                <div class="info-text">
-                    <div><a href="#">博广乐me商城</a><a href="#">橙视圈</a><a href="#">美家秀</a></div>
-                    <div class="copyright">Copyright &copy; 2011 Broadin Technologys. All Rights Reserved || 粤ICP备11055422号 || 多一点互动，多一丝交流，多一份关爱，缔造全新的电视数字生活新理念。</div>
-                </div>
+                <form class="login" action="" method="post">
+                    <div class="form-row">
+                        <label>用户名</label><input class="form-control" type="text" placeholder="">
+                    </div>
+                    <div class="form-row">
+                        <label>密码</label><input class="form-control" type="password" placeholder="">
+                    </div>
+                    <div class="form-row">
+                        <label>验证码</label><input class="form-control input-code" type="text" placeholder="">
+                        <a href="#" class="code" title="点击刷新"><img src="images/code.png" alt=""></a>
+                    </div>
+                    <div class="form-row">
+                        <label></label><input class="" type="checkbox"> 请保持我这次的登录信息&nbsp;&nbsp;|&nbsp;&nbsp;<a class="forget-psd" href="#">忘记密码</a>
+                    </div>
+                    <div class="form-row">
+                        <label></label><button class="btn btn-login">登&nbsp;&nbsp;&nbsp;&nbsp;录</button>
+                    </div>
+                </form>
             </div>
         </div>
+
     </div>
 </div>
 <script src="src/js/leme.js"></script>

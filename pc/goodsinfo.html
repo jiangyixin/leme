@@ -23,7 +23,7 @@
     <script src="src/js/swiper-3.2.7.jquery.min.js"></script>
 </head>
 <body>
-<div class="container-fluid">
+<div id="goodsinfo" class="container-fluid">
     <!-- 头部 -->
     <div class="header">
         <div class="page">
@@ -116,6 +116,107 @@
                             </a>
                         </li>
                     </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main main-4">
+        <div class="page">
+            <ul class="my-breadcrumb breadcrumb bg-gray">
+                <li><a href="#">首页</a></li>
+                <li><a href="#">商品列表</a></li>
+                <li class="active"><a href="#">耳机</a></li>
+            </ul>
+            <div class="goods-info clearfix">
+                <div class="goods-swiper">
+                    <div class="swiper-container gallery-top">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide" style="background-image:url(images/goods_1.png)"></div>
+                            <div class="swiper-slide" style="background-image:url(images/goods_2.png)"></div>
+                            <div class="swiper-slide" style="background-image:url(images/goods_3.png)"></div>
+                            <div class="swiper-slide" style="background-image:url(images/goods_4.png)"></div>
+                            <div class="swiper-slide" style="background-image:url(images/fitting_1.png)"></div>
+                        </div>
+                    </div>
+                    <div class="gallery-control">
+                        <div class="swiper-container gallery-thumbs">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide" style="background-image:url(images/goods_1.png)"></div>
+                                <div class="swiper-slide" style="background-image:url(images/goods_2.png)"></div>
+                                <div class="swiper-slide" style="background-image:url(images/goods_3.png)"></div>
+                                <div class="swiper-slide" style="background-image:url(images/goods_4.png)"></div>
+                                <div class="swiper-slide" style="background-image:url(images/fitting_1.png)"></div>
+                            </div>
+                        </div>
+                        <div class="swiper-control">
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next"></div>
+                            <div class="swiper-button-prev"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="goods-detail">
+                    <h3 class="name">先锋SE-CL31S入耳式通话耳机</h3>
+                    <small class="sub">商品编号：1154200006</small>
+                    <div class="price">¥149.00</div>
+                    <div class="goods-choose">
+                        <div class="color-choose">
+                            <label>颜色：</label>
+                            <div class="my-radio">
+                                <a href="javascript:;" class="checkbox checked" name="color" value="1">象牙白</a>
+                                <a href="javascript:;" class="checkbox" name="color" value="2">经典黑</a>
+                                <a href="javascript:;" class="checkbox" name="color" value="3">香槟金</a>
+                            </div>
+                        </div>
+                        <div class="number-choose">
+                            <label>购买数量：</label>
+                            <div class="my-numbox clearfix">
+                                <div class="numbtn less">-</div>
+                                <input type="number" min="1" max="99" value="1">
+                                <div class="numbtn plus">+</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="share">
+                        <label>分享：</label>
+                        <ul class="share-list">
+                            <li class="share-item"><a href="javascript:;" class="qq"></a></li>
+                            <li class="share-item"><a href="javascript:;" class="weixin"></a></li>
+                            <li class="share-item"><a href="javascript:;" class="weibo"></a></li>
+                            <li class="share-item"><a href="javascript:;" class="hi"></a></li>
+                        </ul>
+                        <p>在线商店全面启用电子发票；电子发票可以作为用户维权、保修的有效凭据。</p>
+                    </div>
+                    <div class="button-group">
+                        <button class="btn btn-buy">立即购买</button>
+                        <button class="btn btn-cart">加入购物车</button>
+                    </div>
+                </div>
+            </div>
+            <div class="goods-pane">
+                <ul class="nav-goods" role="tablist">
+                    <li class="active"><a href="#details" role="tab" data-toggle="tab">商品介绍</a></li>
+                    <li><a href="#parameter" role="tab" data-toggle="tab">规格参数</a></li>
+                    <li><a href="#package" role="tab" data-toggle="tab">包装清单</a></li>
+                    <li><a href="#assess" role="tab" data-toggle="tab">商品评价</a></li>
+                    <li><a href="#aftersale" role="tab" data-toggle="tab">售后保障</a></li>
+                </ul>
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane fade active in" id="details">
+                        <img src="images/goods_detail.png" alt="">
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="parameter">
+
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="package">
+
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="assess">
+
+                    </div>
+                    <div role="tabpanel" class="tab-pane fade" id="aftersale">
+
+                    </div>
                 </div>
             </div>
         </div>

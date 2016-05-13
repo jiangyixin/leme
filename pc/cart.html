@@ -23,7 +23,7 @@
     <script src="src/js/swiper-3.2.7.jquery.min.js"></script>
 </head>
 <body>
-<div class="container-fluid">
+<div id="cart" class="container-fluid">
     <!-- 头部 -->
     <div class="header">
         <div class="page">
@@ -120,55 +120,95 @@
             </div>
         </div>
     </div>
-    <div class="footer">
-        <div class="footer-content page">
-            <ul class="shopping-info justify">
-                <li><span class="online"></span><h5>在线客服</h5></li>
-                <li><span class="return-goods"></span><h5>7天无理由退货</h5></li>
-                <li><span class="exchange-goods"></span><h5>15天免费换货</h5></li>
-                <li><span class="delivery-goods"></span><h5>满150元包邮</h5></li>
-                <li class="justify_fix"></li>
-            </ul>
-            <hr>
-            <div class="about-info justify">
-                <ul>
-                    <li><h3 class="title">帮助中心</h3></li>
-                    <li><a href="#" target="_blank">购买指南</a></li>
-                    <li><a href="#" target="_blank">支付方式</a></li>
-                    <li><a href="#" target="_blank">配送方式</a></li>
-                </ul>
-                <ul>
-                    <li><h3 class="title">服务支持</h3></li>
-                    <li><a href="#" target="_blank">售后政策</a></li>
-                    <li><a href="#" target="_blank">自助服务</a></li>
-                    <li><a href="#" target="_blank">相关下载</a></li>
-                </ul>
-                <ul>
-                    <li><h3 class="title">关于博广</h3></li>
-                    <li><a href="#" target="_blank">了解博广</a></li>
-                    <li><a href="#" target="_blank">加入博广</a></li>
-                    <li><span>&nbsp;</span></li>
-                </ul>
-                <ul class="contact-us">
-                    <li><h3 class="title">联系我们</h3></li>
-                    <li class="follow-us">
-                        <span class="weibo"></span>
-                        <span class="qq"></span>
-                        <span class="weixin"></span>
-                        <span class="weizhi"></span>
-                    </li>
-                    <li><span>400-619-0909</span></li>
-                    <li><span>周一至周日 9:00-18:00</span></li>
-                </ul>
-                <ul class="justify_fix"></ul>
-            </div>
-            <div class="link-info">
-                <div class="info-img">
-                    <img src="images/logo.png" alt="">
+    <div class="main main-2">
+        <div class="page">
+            <div class="page-title">
+                <span class="title"><i class="glyphicon glyphicon-shopping-cart"></i>我的购物车</span>
+                <div class="sui-steps">
+                    <div class="wrap">
+                        <div class="current">
+                            <label><span>1.我的购物车</span></label><i class="triangle-right-bg"></i><i class="triangle-right"></i>
+                        </div>
+                    </div>
+                    <div class="wrap">
+                        <div class="todo">
+                            <label><span>2.填写核对订单信息</span></label><i class="triangle-right-bg"></i><i class="triangle-right"></i>
+                        </div>
+                    </div>
+                    <div class="wrap">
+                        <div class="todo">
+                            <label><span>3.成功提交订单</span></label>
+                        </div>
+                    </div>
                 </div>
-                <div class="info-text">
-                    <div><a href="#">博广乐me商城</a><a href="#">橙视圈</a><a href="#">美家秀</a></div>
-                    <div class="copyright">Copyright &copy; 2011 Broadin Technologys. All Rights Reserved || 粤ICP备11055422号 || 多一点互动，多一丝交流，多一份关爱，缔造全新的电视数字生活新理念。</div>
+            </div>
+            <div class="cart-info clearfix">
+                <table id="cartTable" class="table cart-table">
+                    <thead>
+                    <tr>
+                        <th style="width: 200px;"><input type="checkbox" class="check-all" name="ids[]">全选</th>
+                        <th>商品名称</th>
+                        <th>属性</th>
+                        <th>市场价</th>
+                        <th>本店价</th>
+                        <th>购买数量</th>
+                        <th>小计</th>
+                        <th>操作</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            <input type="checkbox" class="ids">
+                            <div class="table-img"><img src="images/hot_8.png" alt=""></div>
+                        </td>
+                        <td>车宝贝</td>
+                        <td>颜色：黑色</td>
+                        <td>¥599</td>
+                        <td>¥599</td>
+                        <td><div class="my-numbox">
+                                <div class="numbtn less">-</div>
+                                <input type="number" min="1" max="99" value="1">
+                                <div class="numbtn plus">+</div>
+                            </div>
+                        </td>
+                        <td>¥599</td>
+                        <td><a href="#">删除</a></td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="checkbox" class="ids">
+                            <div class="table-img"><img src="images/hot_8.png" alt=""></div>
+                        </td>
+                        <td>车宝贝</td>
+                        <td>颜色：黑色</td>
+                        <td>¥599</td>
+                        <td>¥599</td>
+                        <td><div class="my-numbox">
+                            <div class="numbtn less">-</div>
+                            <input type="number" min="1" max="99" value="1">
+                            <div class="numbtn plus">+</div>
+                        </div>
+                        </td>
+                        <td>¥599</td>
+                        <td><a class="del" href="#">删除</a></td>
+                    </tr>
+                    </tbody>
+                </table>
+                <div class="clearfix">
+                    <div class="button-group">
+                        <button class="btn del-goods"><i class="glyphicon glyphicon-trash"></i>删除选择商品</button>
+                        <button class="btn continue-shopping"><i class="glyphicon glyphicon-gift"></i>继续购物</button>
+                    </div>
+                    <div class="cart-count">
+                        <div><span class="number"><span class="pink">2</span>件产品</span><label>总计：</label><span class="price">¥898.00</span></div>
+                        <div><label>节省：</label><span class="price pink">-¥0.00</span></div>
+                        <div class="total"><label>总计（不含运费）：</label><span class="price">¥898.00</span></div>
+                    </div>
+                </div>
+                <div class="button-group next">
+                    <button class="btn continue-shopping"><i class="glyphicon glyphicon-shopping-cart"></i>继续购物</button>
+                    <button class="btn account-goods"><i class="glyphicon glyphicon-tags"></i>我要结算</button>
                 </div>
             </div>
         </div>

@@ -23,7 +23,7 @@
     <script src="src/js/swiper-3.2.7.jquery.min.js"></script>
 </head>
 <body>
-<div class="container-fluid">
+<div id="address" class="container-fluid">
     <!-- 头部 -->
     <div class="header">
         <div class="page">
@@ -120,59 +120,61 @@
             </div>
         </div>
     </div>
-    <div class="footer">
-        <div class="footer-content page">
-            <ul class="shopping-info justify">
-                <li><span class="online"></span><h5>在线客服</h5></li>
-                <li><span class="return-goods"></span><h5>7天无理由退货</h5></li>
-                <li><span class="exchange-goods"></span><h5>15天免费换货</h5></li>
-                <li><span class="delivery-goods"></span><h5>满150元包邮</h5></li>
-                <li class="justify_fix"></li>
-            </ul>
-            <hr>
-            <div class="about-info justify">
-                <ul>
-                    <li><h3 class="title">帮助中心</h3></li>
-                    <li><a href="#" target="_blank">购买指南</a></li>
-                    <li><a href="#" target="_blank">支付方式</a></li>
-                    <li><a href="#" target="_blank">配送方式</a></li>
-                </ul>
-                <ul>
-                    <li><h3 class="title">服务支持</h3></li>
-                    <li><a href="#" target="_blank">售后政策</a></li>
-                    <li><a href="#" target="_blank">自助服务</a></li>
-                    <li><a href="#" target="_blank">相关下载</a></li>
-                </ul>
-                <ul>
-                    <li><h3 class="title">关于博广</h3></li>
-                    <li><a href="#" target="_blank">了解博广</a></li>
-                    <li><a href="#" target="_blank">加入博广</a></li>
-                    <li><span>&nbsp;</span></li>
-                </ul>
-                <ul class="contact-us">
-                    <li><h3 class="title">联系我们</h3></li>
-                    <li class="follow-us">
-                        <span class="weibo"></span>
-                        <span class="qq"></span>
-                        <span class="weixin"></span>
-                        <span class="weizhi"></span>
-                    </li>
-                    <li><span>400-619-0909</span></li>
-                    <li><span>周一至周日 9:00-18:00</span></li>
-                </ul>
-                <ul class="justify_fix"></ul>
+    <div class="main main-3">
+        <div class="page">
+            <div class="page-title">
+                <span class="title"><i class="glyphicon glyphicon-pencil"></i><span class="orange">添加收货地址</span></span>
             </div>
-            <div class="link-info">
-                <div class="info-img">
-                    <img src="images/logo.png" alt="">
+            <div class="address-info">
+                <div class="address-border">
+                    <div class="title">
+                        <label>收货人信息</label>
+                    </div>
                 </div>
-                <div class="info-text">
-                    <div><a href="#">博广乐me商城</a><a href="#">橙视圈</a><a href="#">美家秀</a></div>
-                    <div class="copyright">Copyright &copy; 2011 Broadin Technologys. All Rights Reserved || 粤ICP备11055422号 || 多一点互动，多一丝交流，多一份关爱，缔造全新的电视数字生活新理念。</div>
+                <div class="address-border">
+                    <table class="address-table table table-bordered">
+                        <tr>
+                            <th>配送地区</th>
+                            <td colspan="3">
+                                <select class="form-control" name="">
+                                    <option value="">广东省</option>
+                                </select>
+                                <select class="form-control" name="">
+                                    <option value="">深圳市</option>
+                                </select>
+                                <select class="form-control" name="">
+                                    <option value="">南山区</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>收货人姓名：</th>
+                            <td><input type="text" class="form-control" placeholder="" value=""><span class="tip">（必填）</span></td>
+                            <th>电子邮件地址：</th>
+                            <td><input type="email" class="form-control" placeholder="" value=""><span class="tip">（必填）</span></td>
+                        </tr>
+                        <tr>
+                            <th>详细地址：</th>
+                            <td><input type="text" class="form-control" placeholder="" value=""><span class="tip">（必填）</span></td>
+                            <th>邮政编码：</th>
+                            <td><input type="text" class="form-control" placeholder="" value=""><span class="tip">（必填）</span></td>
+                        </tr>
+                        <tr>
+                            <th>电话：</th>
+                            <td><input type="text" class="form-control" placeholder=""><span class="tip">（必填）</span></td>
+                            <th>移动手机：</th>
+                            <td><input type="text" class="form-control" placeholder=""><span class="tip">（必填）</span></td>
+                        </tr>
+                    </table>
+                    <div class="button-group">
+                        <button class="btn btn-save">配送至这个地址</button>
+                        <button class="btn btn-del">删除</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
 </div>
 <script src="src/js/leme.js"></script>
 <script type="text/javascript">

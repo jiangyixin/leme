@@ -23,7 +23,7 @@
     <script src="src/js/swiper-3.2.7.jquery.min.js"></script>
 </head>
 <body>
-<div class="container-fluid">
+<div id="order" class="container-fluid">
     <!-- 头部 -->
     <div class="header">
         <div class="page">
@@ -120,59 +120,118 @@
             </div>
         </div>
     </div>
-    <div class="footer">
-        <div class="footer-content page">
-            <ul class="shopping-info justify">
-                <li><span class="online"></span><h5>在线客服</h5></li>
-                <li><span class="return-goods"></span><h5>7天无理由退货</h5></li>
-                <li><span class="exchange-goods"></span><h5>15天免费换货</h5></li>
-                <li><span class="delivery-goods"></span><h5>满150元包邮</h5></li>
-                <li class="justify_fix"></li>
-            </ul>
-            <hr>
-            <div class="about-info justify">
-                <ul>
-                    <li><h3 class="title">帮助中心</h3></li>
-                    <li><a href="#" target="_blank">购买指南</a></li>
-                    <li><a href="#" target="_blank">支付方式</a></li>
-                    <li><a href="#" target="_blank">配送方式</a></li>
-                </ul>
-                <ul>
-                    <li><h3 class="title">服务支持</h3></li>
-                    <li><a href="#" target="_blank">售后政策</a></li>
-                    <li><a href="#" target="_blank">自助服务</a></li>
-                    <li><a href="#" target="_blank">相关下载</a></li>
-                </ul>
-                <ul>
-                    <li><h3 class="title">关于博广</h3></li>
-                    <li><a href="#" target="_blank">了解博广</a></li>
-                    <li><a href="#" target="_blank">加入博广</a></li>
-                    <li><span>&nbsp;</span></li>
-                </ul>
-                <ul class="contact-us">
-                    <li><h3 class="title">联系我们</h3></li>
-                    <li class="follow-us">
-                        <span class="weibo"></span>
-                        <span class="qq"></span>
-                        <span class="weixin"></span>
-                        <span class="weizhi"></span>
-                    </li>
-                    <li><span>400-619-0909</span></li>
-                    <li><span>周一至周日 9:00-18:00</span></li>
-                </ul>
-                <ul class="justify_fix"></ul>
-            </div>
-            <div class="link-info">
-                <div class="info-img">
-                    <img src="images/logo.png" alt="">
+    <div class="main main-3">
+        <div class="page">
+            <div class="page-title">
+                <span class="title"><i class="glyphicon glyphicon-user"></i><span class="orange">确认订单信息页面</span></span>
+                <div class="sui-steps">
+                    <div class="wrap">
+                        <div class="current">
+                            <label><span>1.我的购物车</span></label><i class="triangle-right-bg"></i><i class="triangle-right"></i>
+                        </div>
+                    </div>
+                    <div class="wrap">
+                        <div class="current">
+                            <label><span>2.填写核对订单信息</span></label><i class="triangle-right-bg"></i><i class="triangle-right"></i>
+                        </div>
+                    </div>
+                    <div class="wrap">
+                        <div class="todo">
+                            <label><span>3.成功提交订单</span></label>
+                        </div>
+                    </div>
                 </div>
-                <div class="info-text">
-                    <div><a href="#">博广乐me商城</a><a href="#">橙视圈</a><a href="#">美家秀</a></div>
-                    <div class="copyright">Copyright &copy; 2011 Broadin Technologys. All Rights Reserved || 粤ICP备11055422号 || 多一点互动，多一丝交流，多一份关爱，缔造全新的电视数字生活新理念。</div>
+            </div>
+            <div class="order-info">
+                <div class="order-border">
+                    <div class="title">
+                        <label>收货人信息</label>
+                        <a href="#" class="edit-order"><i class="glyphicon glyphicon-pencil"></i>修改</a>
+                    </div>
+                </div>
+                <div class="order-border">
+                    <table class="address-table table table-bordered">
+                        <tr>
+                            <th>收货人姓名：</th>
+                            <td>张山山</td>
+                            <th>电子邮件地址：</th>
+                            <td>1234567890@aa.com</td>
+                        </tr>
+                        <tr>
+                            <th>详细地址：</th>
+                            <td>深圳软件产业基地4A栋深圳软件产业基地4A栋</td>
+                            <th>邮政编码：</th>
+                            <td>518000</td>
+                        </tr>
+                        <tr>
+                            <th>电话：</th>
+                            <td>123456</td>
+                            <th>移动手机：</th>
+                            <td>18978945632</td>
+                        </tr>
+                    </table>
+                    <div class="title"><label>支付方式</label></div>
+                </div>
+                <div class="order-border">
+                    <div class="radio-group">
+                        <label class="radio-inline">
+                            <input type="radio" name="pay"  value=""> 余额支付
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="pay"  value=""> 货到付款
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="pay" value=""> 支付宝
+                        </label>
+                        <label class="radio-inline">
+                            <input type="radio" name="pay" value=""> 微信支付
+                        </label>
+                    </div>
+                    <div class="title"><label>其他信息</label></div>
+                </div>
+                <div class="order-border">
+                    <div class="title"><label>商品信息</label></div>
+                </div>
+                <div class="order-border">
+                    <table class="goods-table table table-bordered">
+                        <thead>
+                        <tr>
+                            <th>商品名称</th>
+                            <th>属性</th>
+                            <th>本店价</th>
+                            <th>购买数量</th>
+                            <th>小计</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>车宝贝</td>
+                            <td>颜色：黑色</td>
+                            <td>¥299.00</td>
+                            <td>1</td>
+                            <td>¥299.00</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div class="title"><label>费用总计</label></div>
+                </div>
+                <div class="order-border">
+                    <table class="table-price table table-bordered">
+                        <tr>
+                            <td>商品总价：¥299.00</td>
+                        </tr>
+                        <tr>
+                            <td>应付款金额：¥299.00</td>
+                        </tr>
+                    </table>
+                    <div class="order-footer">
+                        <button class="btn btn-submit">提交订单</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+
 </div>
 <script src="src/js/leme.js"></script>
 <script type="text/javascript">

@@ -23,7 +23,7 @@
     <script src="src/js/swiper-3.2.7.jquery.min.js"></script>
 </head>
 <body>
-<div class="container-fluid">
+<div id="goodslist" class="container-fluid">
     <!-- 头部 -->
     <div class="header">
         <div class="page">
@@ -116,6 +116,122 @@
                             </a>
                         </li>
                     </ul>
+                </div>
+            </div>
+            <ul class="my-breadcrumb breadcrumb">
+                <li><a href="#">首页</a></li>
+                <li><a href="#">全部商品</a></li>
+                <li><a href="#">耳机/音箱</a></li>
+            </ul>
+            <ul class="select-box">
+                <li class="select-item">
+                    <label>分类：</label>
+                    <div class="select-options">
+                        <a href="#">全部</a>
+                        <a href="#">入耳式耳机</a>
+                        <a href="#">头戴式耳机</a>
+                        <a href="#">蓝牙耳机</a>
+                        <a href="#">运动耳机</a>
+                        <a href="#">音箱</a>
+                        <a href="#">蓝牙音箱</a>
+                    </div>
+                </li>
+                <li class="select-item">
+                    <label>品牌：</label>
+                    <div class="select-options">
+                        <a href="#">全部</a>
+                        <a href="#">魅族</a>
+                        <a href="#">Beats</a>
+                        <a href="#">JBL</a>
+                        <a href="#">铁三角</a>
+                        <a href="#">更多品牌</a>
+                    </div>
+                </li>
+            </ul>
+            <ul class="nav-filter" role="tablist">
+                <li class="active"><a href="#recommend" role="tab" data-toggle="tab">推荐</a></li>
+                <li><a href="#new" role="tab" data-toggle="tab">新品</a></li>
+                <li><a href="#price" role="tab" data-toggle="tab">价格</a></li>
+                <div class="block-right">
+                    <label><input type="checkbox">  仅显示有货商品</label>
+                </div>
+            </ul>
+            <div class="tab-content">
+                <div role="tabpanel" class="goods-pane tab-pane active" id="recommend">
+                    <ul class="justify">
+                        <li>
+                            <a class="link-goods" href="#">
+                                <div class="img"><img src="images/goods_3.png" alt=""></div>
+                                <div class="name">JBL T100A入耳式耳机</div>
+                                <div class="price">¥99</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="link-goods" href="#">
+                                <div class="img"><img src="images/goods_3.png" alt=""></div>
+                                <div class="name">JBL T100A入耳式耳机</div>
+                                <div class="price">¥99</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="link-goods" href="#">
+                                <div class="img"><img src="images/goods_3.png" alt=""></div>
+                                <div class="name">JBL T100A入耳式耳机</div>
+                                <div class="price">¥99</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="link-goods" href="#">
+                                <div class="img"><img src="images/goods_3.png" alt=""></div>
+                                <div class="name">JBL T100A入耳式耳机</div>
+                                <div class="price">¥99</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="link-goods" href="#">
+                                <div class="img"><img src="images/goods_3.png" alt=""></div>
+                                <div class="name">JBL T100A入耳式耳机</div>
+                                <div class="price">¥99</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="link-goods" href="#">
+                                <div class="img"><img src="images/goods_3.png" alt=""></div>
+                                <div class="name">JBL T100A入耳式耳机</div>
+                                <div class="price">¥99</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="link-goods" href="#">
+                                <div class="img"><img src="images/goods_3.png" alt=""></div>
+                                <div class="name">JBL T100A入耳式耳机</div>
+                                <div class="price">¥99</div>
+                            </a>
+                        </li>
+                        <li class="left_fix">&nbsp;</li>
+                        <li class="left_fix">&nbsp;</li>
+                        <li class="left_fix">&nbsp;</li>
+                        <li class="left_fix">&nbsp;</li>
+                    </ul>
+                    <nav class="text-center">
+                        <ul class="my-pagination pagination">
+                            <li class="disabled">
+                                <a href="#" class="previous" aria-label="Previous"><span aria-hidden="true" class="glyphicon glyphicon-menu-left"></span></a>
+                            </li>
+                            <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+                            <li><a href="#">2</a></li>
+                            <li><a href="#">3</a></li>
+                            <li>
+                                <a href="#" class="next" aria-label="Next"><span aria-hidden="true" class="glyphicon glyphicon-menu-right"></span></a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                <div role="tabpanel" class="tab-pane" id="new">
+
+                </div>
+                <div role="tabpanel" class="tab-pane" id="price">
+
                 </div>
             </div>
         </div>

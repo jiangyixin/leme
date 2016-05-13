@@ -5,397 +5,353 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-    <title>静外</title>
-
+    <title>乐me商城</title>
     <!-- Bootstrap -->
-    <link href="src/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="src/css/swiper-3.2.7.min.css">
-    <link rel="stylesheet" href="src/css/jingwai.css">
+    <link rel="stylesheet" type="text/css" href="src/css/leme.css">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-      <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-      <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <script src="//cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="//cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="jquery/1.11.1/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <!-- <script src="bootstrap/js/bootstrap.min.js"></script> -->
+    <script src="bootstrap/js/bootstrap.js"></script>
     <script src="src/js/swiper-3.2.7.jquery.min.js"></script>
 </head>
 <body>
-
-<div class="container-fluid">
+<div id="index" class="container-fluid">
     <!-- 头部 -->
     <div class="header">
-        <div class="page header-top">
-            <img src="src/css/images/logo.png" class="header-top-logo">
+        <div class="page">
+            <div class="top">
+                <ul class="nav nav-header">
+                    <li class="active"><a href="javascript:;">博广乐me商城</a></li>
+                    <li><a href="" target="_blank">橙视圈</a></li>
+                    <li><a href="" target="_blank">美家秀</a></li>
+                    <li><a href="" target="_blank">问题反馈</a></li>
+                </ul>
+                <div class="tool">
+                    <a href="#">登录</a>|<a href="#">注册</a>
+                    <a href="#" class="cart"><i class="glyphicon glyphicon-shopping-cart"></i><span>购物车(0)</span></a>
+                </div>
+            </div>
         </div>
-        <!-- 导航条 -->
-        <div class="page header-nav">
-            <!-- 导航列表 -->
-            <div class="nav-item">
-                <!-- 一级导航 -->
-                <a class="item-text" href="javascript:;">静外产品</a>
-                <!-- 二级导航 如果有就写 -->
-                <ul class="sub-nav">
-                    <li><a href=""><img src="images/nav_1.png">二级导航</a></li>
-                    <li><a href=""><img src="images/nav_2.png">导航</a></li>
-                    <li><a href=""><img src="images/nav_1.png">二级导航</a></li>
+    </div>
+    <div class="main">
+        <div class="page">
+            <div class="sub-nav">
+                <a href="#" class="logo">
+                    <img src="images/logo.png">
+                </a>
+                <ul class="nav nav-main">
+                    <li><a href="#">商城首页</a></li>
+                    <li><a href="#">移动电源</a></li>
+                    <li><a href="#" data-target="#yaokong">遥控器</a></li>
+                    <li><a href="#" data-target="#yinxiang">音响</a></li>
+                    <li><a href="#">车载</a></li>
+                </ul>
+                <div class="search">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="乐me移动电源">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button"><i class="glyphicon glyphicon-search"></i></button>
+                        </span>
+                    </div>
+                </div>
+                <div class="sub-panel">
+                    <ul id="yaokong" class="panel-list">
+                        <li>
+                            <a href="#" class="panel-link">
+                                <img src="images/goods_1.png" alt="">
+                                <div class="name">先锋SEC-CL31S</div>
+                                <div class="price">¥79.00</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="panel-link">
+                                <img src="images/goods_2.png" alt="">
+                                <div class="name">先锋SEC-CL31S</div>
+                                <div class="price">¥79.00</div>
+                            </a>
+                        </li>
+                    </ul>
+                    <ul id="yinxiang" class="panel-list">
+                        <li>
+                            <a href="#" class="panel-link">
+                                <img src="images/goods_1.png" alt="">
+                                <div class="name">先锋SEC-CL31S</div>
+                                <div class="price">¥79.00</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="panel-link">
+                                <img src="images/goods_2.png" alt="">
+                                <div class="name">先锋SEC-CL31S</div>
+                                <div class="price">¥79.00</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="panel-link">
+                                <img src="images/goods_1.png" alt="">
+                                <div class="name">先锋SEC-CL31S</div>
+                                <div class="price">¥79.00</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="panel-link">
+                                <img src="images/goods_2.png" alt="">
+                                <div class="name">先锋SEC-CL31S</div>
+                                <div class="price">¥79.00</div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="panel-link">
+                                <img src="images/goods_1.png" alt="">
+                                <div class="name">先锋SEC-CL31S</div>
+                                <div class="price">¥79.00</div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="banner">
+                <a href="#"><img src="images/banner.png" alt=""></a>
+            </div>
+            <div class="hot">
+                <ul class="justify">
+                    <li>
+                        <a class="item-link green" href="#">
+                            <div class="item-img"><img src="images/hot_3.png" alt=""></div>
+                            <div class="item-info">
+                                <div class="title">乐me机顶盒</div>
+                                <div class="sub-title">乐赏生活 亲情有me</div>
+                                <div class="price">¥499</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="item-link orange" href="#">
+                            <div class="item-img"><img src="images/hot_2.png" alt=""></div>
+                            <div class="item-info">
+                                <div class="title">乐me移动电源</div>
+                                <div class="sub-title">独创双向充电线 引领电源新潮流</div>
+                                <div class="price">¥98</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="item-link red" href="#">
+                            <div class="item-img"><img src="images/hot_1.png" alt=""></div>
+                            <div class="item-info">
+                                <div class="title">乐me智能云音箱</div>
+                                <div class="sub-title">多媒体云曲库 专属musicApp</div>
+                                <div class="price">¥958</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="justify_fix"></li>
                 </ul>
             </div>
-            <div class="nav-item">
-                <a class="item-text" href="javascript:;">棉花卫生巾</a>
+        </div>
+    </div>
+    <div class="main main-2">
+        <div class="page">
+            <h4>乐me为你推荐</h4>
+            <div class="goods-list clearfix">
+                <div class="goods big-width">
+                    <a class="goods-link" href="#">
+                        <div class="goods-img"><img src="images/hot_6.png" alt=""></div>
+                        <div class="goods-info">
+                            <div class="title">智能一体机</div>
+                            <div class="sub-title">多媒体云曲库 专属musicApp</div>
+                            <div class="price">¥1299</div>
+                        </div>
+                        <div class="heart"></div>
+                        <div class="add-cart">加入购物车<span class="cart"></span></div>
+                    </a>
+                </div>
+                <div class="goods small-height">
+                    <a class="goods-link" href="#">
+                        <div class="goods-img"><img src="images/hot_7.png" alt=""></div>
+                        <div class="goods-info">
+                            <div class="title">天籁DREAMSOUND</div>
+                            <div class="sub-title">发烧级音质</div>
+                            <div class="price">¥958</div>
+                        </div>
+                        <div class="sign red">特惠</div>
+                        <div class="heart"></div>
+                        <div class="add-cart">加入购物车<span class="cart"></span></div>
+                    </a>
+                </div>
+                <div class="goods big-height">
+                    <a href="#" class="goods-link">
+                        <div class="goods-img"><img src="images/hot_5.png" alt=""></div>
+                        <div class="goods-info">
+                            <div class="title">乐me万能遥控器</div>
+                            <div class="sub-title">发烧级音质</div>
+                            <div class="price">¥98</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="goods small-width">
+                    <a href="#" class="goods-link">
+                        <div class="goods-img"><img src="images/hot_3.png" alt=""></div>
+                        <div class="goods-info">
+                            <div class="title">乐me机顶盒</div>
+                            <div class="sub-title">乐赏生活 亲情有me</div>
+                            <div class="price">¥499</div>
+                        </div>
+                        <div class="heart"></div>
+                        <div class="add-cart">加入购物车<span class="cart"></span></div>
+                    </a>
+                </div>
+                <div class="goods small-width">
+                    <a href="#" class="goods-link">
+                        <div class="goods-img"><img src="images/hot_8.png" alt=""></div>
+                        <div class="goods-info">
+                            <div class="title">车宝贝</div>
+                            <div class="sub-title">车载语音对讲神器</div>
+                            <div class="price">¥1988</div>
+                        </div>
+                        <div class="sign orange">热卖</div>
+                    </a>
+                </div>
+                <div class="goods small-width">
+                    <a href="#" class="goods-link">
+                        <div class="goods-img"><img src="images/hot_2.png" alt=""></div>
+                        <div class="goods-info">
+                            <div class="title">乐me机顶盒</div>
+                            <div class="sub-title">乐赏生活 亲情有me</div>
+                            <div class="price">¥499</div>
+                        </div>
+                    </a>
+                </div>
+                <div class="goods small-width">
+                    <a href="#" class="goods-link">
+                        <div class="goods-img"><img src="images/hot_4.png" alt=""></div>
+                        <div class="goods-info">
+                            <div class="title">车宝贝</div>
+                            <div class="sub-title">车载语音对讲神器</div>
+                            <div class="price">¥1988</div>
+                        </div>
+                        <div class="sign green">新品</div>
+                    </a>
+                </div>
             </div>
-            <div class="nav-item">
-                <a class="item-text" href="javascript:;">我们的故事</a>
-            </div>
-            <div class="nav-item">
-                <a class="item-text" href="javascript:;">Kingwife 生活圈</a>
-                <ul class="sub-nav">
-                    <li><a href=""><img src="images/nav_1.png">二级导航</a></li>
-                    <li><a href=""><img src="images/nav_2.png">二级导航</a></li>
+            <h4>精选配件</h4>
+            <div class="fitting">
+                <ul class="justify">
+                    <li>
+                        <a class="item-link" href="#">
+                            <div class="item-img"><img src="images/fitting_1.png" alt=""></div>
+                            <div class="item-info">
+                                <div class="title">小盒子蓝牙音箱</div>
+                                <div class="price">¥499</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="item-link" href="#">
+                            <div class="item-img"><img src="images/fitting_2.png" alt=""></div>
+                            <div class="item-info">
+                                <div class="title">蓝牙小音箱</div>
+                                <div class="price">¥98</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="item-link" href="#">
+                            <div class="item-img"><img src="images/fitting_3.png" alt=""></div>
+                            <div class="item-info">
+                                <div class="title">挂式通话耳机</div>
+                                <div class="price">¥958</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="item-link" href="#">
+                            <div class="item-img"><img src="images/fitting_4.png" alt=""></div>
+                            <div class="item-info">
+                                <div class="title">入耳式通话耳机</div>
+                                <div class="price">¥958</div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="justify_fix"></li>
                 </ul>
             </div>
-            <div class="nav-item">
-                <a class="item-text" href="javascript:;">关于我们</a>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer-content page">
+            <ul class="shopping-info justify">
+                <li><span class="online"></span><h5>在线客服</h5></li>
+                <li><span class="return-goods"></span><h5>7天无理由退货</h5></li>
+                <li><span class="exchange-goods"></span><h5>15天免费换货</h5></li>
+                <li><span class="delivery-goods"></span><h5>满150元包邮</h5></li>
+                <li class="justify_fix"></li>
+            </ul>
+            <hr>
+            <div class="about-info justify">
+                <ul>
+                    <li><h3 class="title">帮助中心</h3></li>
+                    <li><a href="#" target="_blank">购买指南</a></li>
+                    <li><a href="#" target="_blank">支付方式</a></li>
+                    <li><a href="#" target="_blank">配送方式</a></li>
+                </ul>
+                <ul>
+                    <li><h3 class="title">服务支持</h3></li>
+                    <li><a href="#" target="_blank">售后政策</a></li>
+                    <li><a href="#" target="_blank">自助服务</a></li>
+                    <li><a href="#" target="_blank">相关下载</a></li>
+                </ul>
+                <ul>
+                    <li><h3 class="title">关于博广</h3></li>
+                    <li><a href="#" target="_blank">了解博广</a></li>
+                    <li><a href="#" target="_blank">加入博广</a></li>
+                    <li><span>&nbsp;</span></li>
+                </ul>
+                <ul class="contact-us">
+                    <li><h3 class="title">联系我们</h3></li>
+                    <li class="follow-us">
+                        <span class="weibo"></span>
+                        <span class="qq"></span>
+                        <span class="weixin"></span>
+                        <span class="weizhi"></span>
+                    </li>
+                    <li><span>400-619-0909</span></li>
+                    <li><span>周一至周日 9:00-18:00</span></li>
+                </ul>
+                <ul class="justify_fix"></ul>
+            </div>
+            <div class="link-info">
+                <div class="info-img">
+                    <img src="images/logo.png" alt="">
+                </div>
+                <div class="info-text">
+                    <div><a href="#">博广乐me商城</a><a href="#">橙视圈</a><a href="#">美家秀</a></div>
+                    <div class="copyright">Copyright &copy; 2011 Broadin Technologys. All Rights Reserved || 粤ICP备11055422号 || 多一点互动，多一丝交流，多一份关爱，缔造全新的电视数字生活新理念。</div>
+                </div>
             </div>
         </div>
     </div>
-    <!-- 广告 轮播图 -->
-    <div class="ad-screen">
-        <div class="big-swiper swiper-container">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="images/slide_0.png"></div>
-                <div class="swiper-slide"><img src="images/slide_0.png"></div>
-                <div class="swiper-slide"><img src="images/slide_0.png"></div>
+    <div id="add-goods" class="modal fade" role="dialog">
+        <div class="modal-dialog pop-box">
+            <div class="msg"><span class="success"></span>商品添加成功！</div>
+            <div class="button-group">
+                <button data-dismiss="modal"  class="btn btn-back">继续添加</button>
+                <button class="btn btn-cart">去购物车结算</button>
             </div>
-            <!-- 如果需要分页器 -->
-            <!-- <div class="swiper-pagination"></div> -->
-            <!-- 如果需要导航按钮 -->
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>
-        </div>
-    </div>
-<!-- 背景颜色 bg-color-1 -2 -3 -->
-<div class="main bg-color-1">
-    <div class="page">
-        <!-- 标题 -->
-        <div class="row">
-            <div class="col col-md-12">
-                <div class="titles">
-                    <h1 class="title-lined">A SANITARY NAPKIN WITH TTEMPERATURE</h1>
-                    <p class="subtitle">纯天然舒适感</p>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col col-md-4">
-                <div class="module">
-                    <a class="module-link" href="javascript:;">
-                        <img src="images/p_1.png">
-                        <div class="module-content bg-white">
-                            <!-- 需要显示的文字 -->
-                            <p class="module-title">FROM THE SUN'STEMPERATURE</p>
-                            <p class="module-title">北纬33度 全球好棉</p>
-                            <!-- 隐藏的文字 -->
-                            <p class="module-text text-hide">（产自中国南疆和美国加州的最好棉花生产基地的长绒棉）</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col col-md-8">
-                <div class="module">
-                    <a class="module-link" href="javascript:;">
-                        <img src="images/p_2.png">
-                        <div class="module-content bg-white">
-                            <p class="module-title">FROM THE SUN'STEMPERATURE</p>
-                            <p class="module-title">北纬33度 全球好棉</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col col-md-4">
-                <div class="module">
-                    <a class="module-link" href="javascript:;">
-                        <img src="images/p_3.png">
-                        <div class="module-content bg-white">
-                            <p class="module-title">FROM THE SUN'STEMPERATURE</p>
-                            <p class="module-title">北纬33度 全球好棉</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col col-md-4">
-                <div class="module">
-                    <a class="module-link" href="javascript:;">
-                        <img src="images/p_1.png">
-                        <div class="module-content bg-white">
-                            <p class="module-title">FROM THE SUN'STEMPERATURE</p>
-                            <p class="module-title">北纬33度 全球好棉</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col col-md-4">
-                <div class="module">
-                    <a class="module-link" href="javascript:;">
-                        <img src="images/p_3.png">
-                        <div class="module-content bg-white">
-                            <p class="module-title">FROM THE SUN'STEMPERATURE</p>
-                            <p class="module-title">北纬33度 全球好棉</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col col-md-4">
-                <div class="module">
-                    <a class="module-link" href="javascript:;">
-                        <img src="images/p_3.png">
-                        <div class="module-content bg-white">
-                            <p class="module-title">FROM THE SUN'STEMPERATURE</p>
-                            <p class="module-title">北纬33度 全球好棉</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col col-md-4">
-                <div class="module">
-                    <a class="module-link" href="javascript:;">
-                        <img src="images/p_3.png">
-                        <div class="module-content bg-white">
-                            <p class="module-title">CARE FOR WOMEN</p>
-                            <p class="module-title">女人，经期就该暖一点</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col col-md-4">
-                <div class="module">
-                    <a class="module-link" href="javascript:;">
-                        <img src="images/p_1.png">
-                        <div class="module-content bg-white">
-                            <p class="module-title">FROM THE SUN'STEMPERATURE</p>
-                            <p class="module-text text-hide">北纬33度 全球好棉</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col col-md-12">
-                <div class="ad module">
-                    <a class="module-link"  href=""><img src="images/ad.png"></a>
-                </div>
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col col-md-12">
-                <div class="titles">
-                    <h1 class="title-lined">A SANITARY NAPKIN WITH TTEMPERATURE</h1>
-                    <p class="subtitle">生活圈</p>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col col-md-4">
-                <div class="module">
-                    <a class="module-link" href="">
-                        <img src="images/life.png">
-                        <div class="module-content bg-white">
-                            <p class="module-title">FROM THE SUN'STEMPERATURE</p>
-                            <p class="module-title">北纬33度 全球好棉</p>
-                            <p class="module-text text-hide">（产自中国南疆和美国加州的最好棉花生产基地的长绒棉）</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col col-md-4">
-                <div class="module">
-                    <a class="module-link" href="">
-                        <img src="images/life.png">
-                        <div class="module-content bg-white">
-                            <p class="module-title">FROM THE SUN'STEMPERATURE</p>
-                            <p class="module-title">北纬33度 全球好棉</p>
-                            <p class="module-text text-hide">（产自中国南疆和美国加州的最好棉花生产基地的长绒棉）</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col col-md-4">
-                <div class="module">
-                    <a class="module-link" href="">
-                        <img src="images/life.png">
-                        <div class="module-content bg-white">
-                            <p class="module-title">FROM THE SUN'STEMPERATURE</p>
-                            <p class="module-title">北纬33度 全球好棉</p>
-                            <p class="module-text text-hide">（产自中国南疆和美国加州的最好棉花生产基地的长绒棉）</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col col-md-4">
-                <div class="module">
-                    <a class="module-link" href="">
-                        <img src="images/life.png">
-                        <div class="module-content bg-white">
-                            <p class="module-title">FROM THE SUN'STEMPERATURE</p>
-                            <p class="module-title">北纬33度 全球好棉</p>
-                            <p class="module-text text-hide">（产自中国南疆和美国加州的最好棉花生产基地的长绒棉）</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col col-md-4">
-                <div class="module">
-                    <a class="module-link" href="">
-                        <img src="images/life.png">
-                        <div class="module-content bg-white">
-                            <p class="module-title">FROM THE SUN'STEMPERATURE</p>
-                            <p class="module-title">北纬33度 全球好棉</p>
-                            <p class="module-text text-hide">（产自中国南疆和美国加州的最好棉花生产基地的长绒棉）</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col col-md-4">
-                <div class="module">
-                    <a class="module-link" href="">
-                        <img src="images/life.png">
-                        <div class="module-content bg-white">
-                            <p class="module-title">FROM THE SUN'STEMPERATURE</p>
-                            <p class="module-title">北纬33度 全球好棉</p>
-                            <p class="module-text text-hide">（产自中国南疆和美国加州的最好棉花生产基地的长绒棉）</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col col-md-4">
-                <div class="module">
-                    <a class="module-link" href="">
-                        <img src="images/life.png">
-                        <div class="module-content bg-white">
-                            <p class="module-title">FROM THE SUN'STEMPERATURE</p>
-                            <p class="module-title">北纬33度 全球好棉</p>
-                            <p class="module-text text-hide">（产自中国南疆和美国加州的最好棉花生产基地的长绒棉）</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col col-md-4">
-                <div class="module">
-                    <a class="module-link" href="">
-                        <img src="images/life.png">
-                        <div class="module-content bg-white">
-                            <p class="module-title">FROM THE SUN'STEMPERATURE</p>
-                            <p class="module-title">北纬33度 全球好棉</p>
-                            <p class="module-text text-hide">（产自中国南疆和美国加州的最好棉花生产基地的长绒棉）</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-            <div class="col col-md-4">
-                <div class="module">
-                    <a class="module-link" href="">
-                        <img src="images/life.png">
-                        <div class="module-content bg-white">
-                            <p class="module-title">FROM THE SUN'STEMPERATURE</p>
-                            <p class="module-title">北纬33度 全球好棉</p>
-                            <p class="module-text text-hide">（产自中国南疆和美国加州的最好棉花生产基地的长绒棉）</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</div>
-    <div class="footer bg-color-1">
-        <div class="page footer-content">
-            <div>
-                <a class="footer-text" href="">法律声明</a><span class="pipe">|</span>
-                <a class="footer-text" href="">静外全球</a><span class="pipe">|</span>
-                <a class="footer-text" href="">静外中国</a><span class="pipe">|</span>
-                <a class="footer-text" href="">联系我们</a><span class="pipe">|</span>
-                <a class="footer-text" href="">售后服务</a><span class="pipe">|</span>
-                <span class="footer-text" >kingwife@sina.com</span>
-            </div>
-            <p class="footer-text">rerausesadakingwife@sina.com</p>
-            <p class="footer-text">静外女性卫生用品股份有限公司</p>
+            <span data-dismiss="modal" class="close"></span>
         </div>
     </div>
 </div>
+<script src="src/js/leme.js"></script>
 <script type="text/javascript">
-
-var navList = [
-    { en: 'PRODUCT', ch: '静外产品' }, 
-    { en: 'COTTON TAMPON', ch: '棉花卫生巾' },
-    { en: 'OUR STORY', ch: '我们的故事' }, 
-    { en: 'KINGWIFE LIFE CHART', ch: 'Kingwife 生活圈' }, 
-    { en: 'ABOUT US', ch: '关于我们' }
-    ];
-
-$(document).ready(function () {
-    // 轮播图
-    var mySwiper = new Swiper ('.big-swiper', {
-        direction: 'horizontal',
-        loop: true,
-        // 如果需要分页器
-        // pagination: '.swiper-pagination',
-        // 如果需要前进后退按钮
-        nextButton: '.swiper-button-next',
-        prevButton: '.swiper-button-prev',
-    
-    });
-
-    // 显示二级导航
-    $('.header-nav').on('mouseenter', '.nav-item', function(event) {
-        var subNav = $(this).find('.sub-nav');
-        var index = $(this).index();
-        $(this).find('.item-text').html(navList[index].en).css('background-color', '#fff');
-
-        if (subNav.get(0)) {
-            subNav.fadeIn('fast', function() {});
-        } 
-    });
-    // 隐藏二级导航
-    $('.header-nav').on('mouseleave', '.nav-item', function(event) {
-        var subNav = $(this).find('.sub-nav');
-        var index = $(this).index();
-        $(this).find('.item-text').html(navList[index].ch).css('background-color', '');
-        subNav.fadeOut('fast', function() {});
-    });
-    // 显示文字
-    $('.module').on('mouseenter', function(event) {
-        $(this).find('.text-hide').css('display', 'inline');
-        $(this).find('.module-content').css({
-            'height': '190px',
-            'background-color': '#fff'
-        });
-    });
-    // 隐藏文字
-    $('.module').on('mouseleave', function(event) {
-        $(this).find('.text-hide').css('display', 'none');
-        $(this).find('.module-content').css({
-            'height': '105px',
-            'background-color': ''
-        });
-    });
-
-})
 
 </script>
 </body>

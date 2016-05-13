@@ -15,12 +15,12 @@
 </head>
 <body>
 <div class="page-group">
-    <div id="orderdetail" class="page page-current">
+    <div id="expand" class="page page-current">
         <header class="bar bar-nav">
             <a class="button button-link button-nav pull-left back" href="#" data-transition='slide-out'>
                 <span class="icon icon-left"></span>
             </a>
-            <h1 class="title">订单详情</h1>
+            <h1 class="title">我的推广</h1>
         </header>
         <nav class="bar bar-tab">
             <a class="tab-item" href="../index.html">
@@ -31,7 +31,7 @@
                 <span class="icon icon-menu"></span>
                 <span class="tab-label">分类</span>
             </a>
-            <a class="tab-item" href="#">
+            <a class="tab-item" href="../cart.html">
                 <span class="icon icon-cart"></span>
                 <span class="tab-label">购物车</span>
             </a>
@@ -42,41 +42,39 @@
         </nav>
         <div class="content">
             <!-- 这里是页面内容区 -->
-            <div class="order-detail">
-                <div class="detail-info">
-                    <div class="row no-gutter">
-                        <div class="col-50">
-                            <label>订单号：</label>
-                        </div>
-                        <div class="col-50">
-                            <label>状态：</label>
-                            <span>审批中</span>
-                        </div>
-                    </div>
-                    <div class="row no-gutter">
-                        <div class="col-50">
-                            <label>时间：</label>
-                        </div>
-                        <div class="col-50">
-                            <label>积分：</label>
-                        </div>
-                    </div>
-                    <div class="row no-gutter">
-                        <div class="col-20">
-                            <label>备注：</label>
-                        </div>
-                        <div class="col-80">
-                            <div class="note"></div>
-                        </div>
-                    </div>
+            <div class="expand-info">
+                <div class="info-head">
+                    <img src="../images/head.png" alt="">
                 </div>
-                <div class="detail-img">
-                    <img src="../images/orderinfo.png" alt="">
+                <div class="info-text">
+                    <div>昵称</div>
+                    <div>是否为推广人员</div>
                 </div>
-                <div class="detail-code">
-                    <h5>商品条形码</h5>
-                    <img src="../images/ordercode.png" alt="">
+            </div>
+            <div class="expand-money row no-gutter">
+                <div class="sales col-50">销售额：<span class="price">50000元</span></div>
+                <div class="reward col-50">奖励：<span class="price">900元</span></div>
+            </div>
+            <div class="hidden-list">
+                <div class="list-title">
+                     我的推广<i class="icon icon-up rotate"></i>
                 </div>
+                <ul class="list-content show">
+                    <li>一级推广人</li>
+                    <li>一级推广人</li>
+                    <li>一级推广人</li>
+                </ul>
+            </div>
+            <div class="hidden-list">
+                <div class="list-title">
+                    我的财富<i class="icon icon-up rotate"></i>
+                </div>
+                <ul class="list-content show">
+                    <li>下单未购买</li>
+                    <li>下单已购买</li>
+                    <li>已经体现财富</li>
+                    <li>可提现财富</li>
+                </ul>
             </div>
         </div>
     </div>

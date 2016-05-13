@@ -2,39 +2,9 @@
  * Created by Administrator on 2016/4/30.
  */
 
-
-/*$(function () {
-    'use strict';
-    var Leme = function () {
-
-    };
-    Leme.prototype = {
-        construction: this,
-        bindEvent: function () {
-
-        }
-    };
-
-    $.init();
-});*/
-
-
 var Leme = (function (my) {
     'use strict';
     function bindEvent () {
-        // product 切换
-        $(window).on('click', '.nav-left li', function () {
-            $(this).addClass('active');
-            $(this).siblings().removeClass('active');
-            var target = $(this).attr('data-target');
-            $(target).addClass('active');
-            $(target).siblings().removeClass('active');
-        });
-        // 单选按钮组
-        $(window).on('click', '.my-radio .checkbox', function() {
-            $(this).addClass('checked');
-            $(this).siblings().removeClass('checked');
-        });
         // 数量选择
         $(window).on('click', '.my-numbox .numbtn', function() {
             var eleNum = $(this).siblings('input[type="number"]');
@@ -51,9 +21,38 @@ var Leme = (function (my) {
             }
             eleNum.val(num);
         });
+        // goodsinfo
+        $(document).on("pageInit", "#goodsinfo", function(e, id, page) {
+            // 单选按钮组
+            $(page).on('click', '.my-radio .checkbox', function() {
+                $(this).addClass('checked');
+                $(this).siblings().removeClass('checked');
+            });
+        });
+        // product
+        $(document).on("pageInit", "#product", function(e, id, page) {
+            $(page).on('click', '.nav-left li', function () {
+                $(this).addClass('active');
+                $(this).siblings().removeClass('active');
+                var target = $(this).attr('data-target');
+                $(target).addClass('active');
+                $(target).siblings().removeClass('active');
+            });
+        });
         $(document).on("pageInit", "#addressadd", function(e) {
             $("#city-picker").cityPicker({
                 // value: ['深圳', '南山区']
+            });
+        });
+        $(document).on("pageInit", '#integralmall', function (e, id, page) {
+            $(page).on('click', '.btn-sort', function () {
+                $(this).find('.icon-caret').toggleClass('rotate');
+            });
+        });
+        $(document).on("pageInit", '#expand', function (e, id, page) {
+            $(page).on('click', '.hidden-list .list-title', function () {
+                $(this).find('.icon-up').toggleClass('rotate');
+                $(this).next('.list-content').toggleClass('show');
             });
         });
     }
