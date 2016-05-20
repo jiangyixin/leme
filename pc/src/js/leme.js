@@ -175,5 +175,11 @@
         $(this).next('.list-content').toggleClass('show');
     }
 
+    $.cxSelect.defaults.url = 'src/js/cityData.json';
+    $('#select-city').cxSelect({
+        selects: ['province', 'city', 'area'],
+        nodata: 'none'
+    });
+    
 })($('#center'));
 

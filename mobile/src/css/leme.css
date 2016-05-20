@@ -73,7 +73,12 @@
 .price {
     color: #e74c49;
 }
-
+.text-right {
+    text-align: right;
+}
+.text-center {
+    text-align: center;
+}
 /* iconfont */
 @font-face {font-family: "iconfont";
     src: url('../font/iconfont.eot?t=1462528352'); /* IE9*/
@@ -109,7 +114,7 @@
 .icon-add:before { content: "\e604"; }
 .icon-head:before { content: "\e60b"; }
 .icon-phone-font:before { content: "\e60c"; }
-
+.icon-coupon:before { content: "\e60a" }
 
 /* index */
 .index-swiper {
@@ -481,6 +486,16 @@
     color: #e83828;
     font-size: 1rem;
 }
+.address-item{
+    background-color: #fff;
+    color: inherit;
+    display: block;
+    text-align: center;
+}
+
+.item-address{
+    text-align:left;
+}
 .pay-info {
     background-color: #fff;
 }
@@ -549,9 +564,16 @@
     margin-left: 0.5rem;
     line-height: 1.7;
 }
+.info-item .info-text .name {
+    width: 90%;
+    overflow: hidden;
+    white-space: nowrap;
+}
 .info-item .info-text .sub-title {
     color: #8c8c8c;
     font-size: 0.7rem;
+    overflow: hidden;
+    white-space: nowrap;
 }
 .info-item .info-text .sub-title .num {
     margin-left: 3.5rem;
@@ -727,7 +749,9 @@
 .sign.green {
     background-color: #83c44e;
 }
-
+.red {
+    color: #f00;
+}
 
 /* goodsinfo */
 
@@ -846,11 +870,19 @@
     text-align: center;
     float: left;
 }
+.my-numbox .less {
+    border-top-left-radius: .25rem;
+    border-bottom-left-radius: .25rem;
+}
+.my-numbox .plus {
+    border-top-right-radius: .25rem;
+    border-bottom-right-radius: .25rem;
+}
 .my-numbox input[type="number"] {
     border-left: 0;
     border-right: 0;
     padding: 0;
-    width: 2.5rem;
+    width: 2.2rem;
 }
 .my-numbox input[type="number"]::-webkit-inner-spin-button {
     -webkit-appearance: none;
@@ -862,7 +894,7 @@
     width: 1.3rem;
     height: 1.3rem;
     line-height: 1.3rem;
-    float: none;
+    /*float: none;*/
 }
 .my-numbox.small input[type="number"] {
     padding: 0;
@@ -902,6 +934,7 @@
 .order-head .status {
     float: right;
 }
+
 .order-foot {
     padding: .4rem;
     background-color: #fff;
@@ -924,6 +957,7 @@
     font-weight: bold;
     text-align: center;
 }
+
 .order-foot .btn-buy {
     display: inline-block;
     float: right;
@@ -945,6 +979,7 @@
     width: 5.5rem;
     height: 1.8rem;
 }
+
 
 /* agentmall */
 .goods-list {
@@ -1095,15 +1130,50 @@
 }
 
 /* cart */
+.bar.bar-cart {
+    height: 3rem;
+}
 .cart-list {
     background-color: #fff;
+    margin-top: 10px;
+}
+.cart-list .empty-cart.show {
+    display: block;
+}
+.cart-list .empty-cart {
+    display: none;
+    padding: 2rem 3rem;
+    text-align: center;
+    color: #d0d0d0;
+    background-color: #efeff4;
+}
+.empty-cart i.icon.icon-cart {
+    font-size: 4rem;
+    color: #d0d0d0;
+}
+.cart-list .empty-cart .button {
+    margin-top: 1rem;
 }
 .cart-list .info-item .info-img {
     width: 5.5rem;
     height: 5.5rem;
 }
 .cart-list .info-item {
+    position: relative;
     border-top: 2px solid #f2f2f2;
+}
+.info-item .del-cart {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1rem;
+    height: 1rem;
+    line-height: .8rem;
+    text-align: center;
+    color: #a0a0a0;
+    border-radius: 50%;
+    font-size: .8rem;
+    /*border: 1px solid #c0c0c0;*/
 }
 .bar .btn-edit,
 .bar .btn-save {
@@ -1127,9 +1197,12 @@
 .cart-foot .foot-text {
     display: inline-block;
     width: 65%;
-    padding: .3rem 1.3rem;
+    padding: 0 1rem;
     color: inherit;
     font-size: .7rem;
+    line-height: 2.5rem;
+    overflow: hidden;
+    white-space: normal;
 }
 .cart-foot .price {
     color: #f39800;
@@ -1138,15 +1211,14 @@
 .cart-foot .btn-account {
     display: inline-block;
     width: 35%;
-    height: 100%;
     padding: 0;
-    line-height: 3rem;
+    line-height: 2.5rem;
     float: right;
     background-color: #e83828;
     color: #fff;
     text-align: center;
-    font-weight: bold;
     font-size: .9rem;
+    border: 0;
 }
 
 /* cartedit */
@@ -1428,4 +1500,37 @@ label.label-checkbox input[type="radio"]:checked + .item-media i.icon-form-check
 
 /* ----- order ----- */
 
+.bar .item-footer {
+    line-height: 2.5rem;
+}
+.bar .item-footer .item-btn {
+    text-align: center;
+    display: block;
+}
+.bar .item-footer .item-text {
+    padding-left: .5rem;
+}
 
+/* ------- orderhistory ------- */
+.text-list {
+    margin-top: .25rem;
+    margin-bottom: .25rem;
+    padding: .4rem;
+    background-color: #fff;
+    color: #9c9da0;
+}
+.text-list p {
+    margin-top: .25rem;
+    margin-bottom: .25rem;
+}
+.fsb {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}

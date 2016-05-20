@@ -412,18 +412,20 @@
                                         <div class="form-row">
                                             <label><span>*</span>所在地区：</label>
                                             <div>
-                                                <select class="form-control" name="">
-                                                    <option value="">广东省</option>
-                                                </select>
-                                                <select class="form-control" name="">
-                                                    <option value="">深圳市</option>
-                                                </select>
-                                                <select class="form-control" name="">
-                                                    <option value="">南山区</option>
-                                                </select>
-                                                <select class="form-control" name="">
-                                                    <option value="">学府路</option>
-                                                </select>
+                                                <fieldset id="select-city">
+                                                    <select class="form-control province cxselect" name="">
+
+                                                    </select>
+                                                    <select class="form-control city cxselect" name="">
+
+                                                    </select>
+                                                    <select class="form-control area cxselect" name="">
+
+                                                    </select>
+                                                    <!--<select class="form-control" name="">
+                                                        <option value="">学府路</option>
+                                                    </select>-->
+                                                </fieldset>
                                             </div>
                                         </div>
                                         <div class="form-row">
@@ -503,9 +505,10 @@
         </div>
     </div>
 </div>
+<script src="src/js/jquery.cxselect.min.js"></script>
 <script src="src/js/leme.js"></script>
 <script type="text/javascript">
-
+    
 </script>
 </body>
 </html>
